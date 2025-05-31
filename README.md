@@ -219,6 +219,34 @@ src/
 ├── index.ts
 ```
 
+```
+src/
+├── routes/
+│   └── usuario.routes.ts           # Define rotas relacionadas ao usuário
+├── controllers/
+│   └── UsuarioController.ts        # Controlador para regras de entrada e saída
+├── services/
+│   └── UsuarioService.ts           # Lógica e regras de negócio
+├── repositories/
+│   └── UsuarioRepository.ts        # Acesso aos dados do usuário no banco
+├── models/
+│   └── Usuario.ts                  # Modelo da entidade usuário
+├── database/
+│   └── sqlite.ts                   # Configuração do banco de dados
+├── index.ts                       # Arquivo principal que inicia o servidor
+```
+
+Transformar o backend atual em um projeto organizado com as seguintes camadas:
+
+| Camada         | Responsabilidade                                         |
+| -------------- | -------------------------------------------------------- |
+| **Routes**     | Configuração e definição das rotas HTTP                  |
+| **Controller** | Recebe requisições e retorna respostas (entrada/saída)   |
+| **Service**    | Contém as regras de negócio e lógica da aplicação        |
+| **Repository** | Responsável pelo acesso e manipulação dos dados no banco |
+| **Model**      | Define a estrutura das entidades (ex: Usuário)           |
+| **Database**   | Configura conexão e operações do banco de dados          |
+
 ---
 
 ## ✅ Passo a Passo
